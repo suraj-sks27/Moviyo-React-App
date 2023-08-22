@@ -1,10 +1,13 @@
 import React from 'react';
 
 import Wrapper from '../../components/wrapper/Wrapper';
+import { useNavigate } from 'react-router-dom';
 
 import './landing.css';
 
 const Landing = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="app__landing">
       <div className="app__landing-img">
@@ -22,10 +25,11 @@ const Landing = () => {
           <div className="app__landing-content_subtitle">Watch anywhere. Cancel anytime.</div>
           <div className="app__landing-content_subtitle_2">Ready to watch? Click on Explore.</div>
           <div className="app__landing-content_btn">
-            <button type="button">Explore</button>
+            <button type="button" onClick={() => navigate('/home')}>
+              Explore
+            </button>
           </div>
         </div>
-        <div style={{ height: '1000rem', width: '100px' }}></div>
       </Wrapper>
     </div>
   );
