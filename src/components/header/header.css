@@ -74,6 +74,89 @@
   display: none;
 }
 
+.app__header-searchBar {
+  width: 100%;
+  height: 60px;
+
+  position: absolute;
+  top: 60px;
+  left: 0;
+  transform: translateY(-60);
+
+  background: #dedede;
+  animation: search 0.5s ease;
+}
+
+@keyframes search {
+  0% {
+    transform: translateY(-130px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.app__header-searchBar_input {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  height: 40px;
+  margin-top: 10px;
+}
+
+.app__header-searchBar_input svg {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.app__header-searchBar_input input {
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+
+  border: none;
+  outline: 0;
+
+  background: #dedede;
+  font-size: 20px;
+}
+
+.mobileView {
+  background: var(--black3);
+}
+
+.mobileView .app__header-nav {
+  position: absolute;
+  top: 60px;
+  left: 0;
+
+  width: 100%;
+  height: fit-content;
+
+  background: var(--black3);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 20px 0;
+
+  animation: search 0.5s forwards;
+}
+
+.mobileView .app__header-nav .app__header-navItem {
+  font-size: 1.2rem;
+}
+
+.mobileView .app__header-nav .app__header-navItem:nth-child(3) {
+  display: none;
+}
+
 @media screen and (max-width: 750px) {
   .app__header-nav {
     display: none;
@@ -88,5 +171,11 @@
   .app__header-mobileMenu svg {
     font-size: 18px;
     color: white;
+  }
+
+  .app__header-searchBar_input input {
+    height: 60px;
+    font-size: 20px;
+    padding: 0 30px;
   }
 }

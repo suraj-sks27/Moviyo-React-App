@@ -6,7 +6,7 @@ import logo from '../../assets/movix-logo.svg';
 import { SlMenu } from 'react-icons/sl';
 import { VscChromeClose } from 'react-icons/vsc';
 import { HiOutlineSearch } from 'react-icons/hi';
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 import './header.css';
 
@@ -18,8 +18,14 @@ const Header = () => {
   const [showSearch, setShowSearch] = useState('');
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
+  const location = useLocation();
 
   //! M E T H O D S
+
+  //to scroll to top of the page after reloding
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
 
   const controlNavbar = () => {
     if (window.scrollY > 200) {
@@ -64,7 +70,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`app__header ${showNav} `}>
+    <div className={`app__header ${mobileMenu ? 'mobileView' : ''} ${showNav} `}>
       <Wrapper>
         <div className="app__header-logo" onClick={() => navigate('/')}>
           <img src={logo} alt="logo img" />
