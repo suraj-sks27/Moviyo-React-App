@@ -79,3 +79,17 @@ p {
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 350px) {
+  .container {
+    padding: 50px 20px;
+  }
+
+  .app__footer-top {
+    gap: 10px;
+  }
+
+  .app__footer-top li {
+    font-size: 10px;
+  }
+}
