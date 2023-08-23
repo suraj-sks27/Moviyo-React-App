@@ -1,14 +1,16 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://api.themoviedb.org/3';
-const TMBD_TOKEN = import.meta.env.VITE_APP_TMBD_TOKEN;
+const TMDB_TOKEN = import.meta.env.VITE_APP_TMDB_TOKEN;
+
 const headers = {
-  Authorization: 'Bearer' + TMBD_TOKEN,
+  Authorization: 'Bearer ' + TMDB_TOKEN,
 };
 
+// Method to fetch data from API(url:- End point , params:- query string of api)
 export const fetchDataFromApi = async (url, params) => {
   try {
-    const { data } = await axios.get(BASE_URL + url + { headers, params });
+    const { data } = await axios.get(BASE_URL + url, { headers, params });
     return data;
   } catch (err) {
     console.log(err);
