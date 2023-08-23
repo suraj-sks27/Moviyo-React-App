@@ -16,12 +16,12 @@ function App() {
   }, []);
 
   const fetchApiConfig = async () => {
-    let response = await fetchDataFromApi('/configuration');
+    let res = await fetchDataFromApi('/configuration');
 
     const url = {
-      backdrop: response.images?.secure_base_url + 'original',
-      poster: response.images?.secure_base_url + 'original',
-      profile: response.images?.secure_base_url + 'original',
+      backdrop: res.images.secure_base_url + 'original',
+      poster: res.images.secure_base_url + 'original',
+      profile: res.images.secure_base_url + 'original',
     };
 
     dispatch(getApiConfig(url));
