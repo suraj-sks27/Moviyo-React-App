@@ -1,1 +1,115 @@
+.app__heroBanner {
+  width: 100%;
+  height: 700px;
 
+  background-color: var(--black);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.app__heroBanner-img {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0.5;
+  overflow: hidden;
+}
+
+.app__heroBanner-img .lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+}
+
+.lazy-load-image-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.app__heroBanner-opacity {
+  width: 100%;
+  height: 400px;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background: linear-gradient(180deg, rgba(248, 158, 0, 0) 0%, rgba(4, 21, 45, 1) 100%);
+}
+
+.app__heroBanner-content {
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__heroBanner-content_searchinput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.app__heroBanner-content_searchinput input {
+  width: calc(100% - 150px);
+  height: 60px;
+
+  border: none;
+  border-radius: 30px 0 0 30px;
+  outline: none;
+
+  padding: 0 30px;
+
+  font-size: 1.5rem;
+}
+
+.app__heroBanner-content_searchinput button {
+  height: 60px;
+  width: 150px;
+  border: none;
+  outline: none;
+  border-radius: 0 30px 30px 0;
+
+  background: var(--gradient);
+
+  padding: 0 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  .app__heroBanner {
+    height: 450px;
+  }
+  .app__heroBanner-content {
+    max-width: 500px;
+  }
+
+  .app__heroBanner-content_searchinput input {
+    width: calc(100% - 100px);
+    padding: 0 15px;
+
+    height: 50px;
+    font-size: 0.9rem;
+  }
+
+  .app__heroBanner-content_searchinput button {
+    width: 100px;
+    height: 50px;
+
+    padding: 0 15px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
