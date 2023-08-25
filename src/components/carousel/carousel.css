@@ -1,0 +1,159 @@
+.carousel {
+  margin-bottom: 50px;
+}
+
+.carousel .wrapper {
+  position: relative;
+}
+
+.carousel_Title {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.carousel_items {
+  display: flex;
+  overflow-y: hidden;
+  gap: 20px;
+
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 0 20px;
+}
+
+.carousel_items .carousel_item {
+  min-width: calc(20% - 16px);
+  cursor: pointer;
+}
+
+.wrapper .arrow {
+  position: absolute;
+  display: block;
+  z-index: 1;
+  font-size: 2rem;
+  cursor: pointer;
+
+  top: 44%;
+  transform: translateY(-50%);
+
+  color: #111;
+  opacity: 0.8;
+
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.arrow:hover {
+  box-shadow: 0 0 10px var(--pink);
+  color: var(--pink);
+  opacity: 1;
+}
+
+.scrollNav_left {
+  left: 40px;
+}
+
+.scrollNav_right {
+  right: 40px;
+}
+
+.carousel_img {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1.5;
+  background-size: cover;
+  background-position: center;
+
+  margin-bottom: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  /* overflow: hidden; */
+
+  padding: 10px;
+}
+
+.lazy-load-image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.lazy-load-image-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  transition: all 0.2s ease;
+}
+
+.lazy-load-image-background img:hover {
+  filter: brightness(60%);
+  transform: scale(1.05);
+}
+
+.genres {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.carousel_content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 8px;
+}
+
+.carousel_content .title {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  line-height: 24px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.carousel_content .date {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+@media screen and (max-width: 790px) {
+  .carousel_items .carousel_item {
+    min-width: calc(25% - 15px);
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .carousel_content .title {
+    font-size: 15px;
+  }
+
+  .carousel_img {
+    margin-bottom: 20px;
+  }
+
+  .genres {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel_items .carousel_item {
+    min-width: 150px;
+  }
+}

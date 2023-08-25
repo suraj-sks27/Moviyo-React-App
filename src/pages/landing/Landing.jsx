@@ -22,7 +22,7 @@ const Landing = () => {
       <Wrapper>
         <div className="app__landing-content">
           <div className="app__landing-content_title">Unlimited movies, TV shows and more</div>
-          <div className="app__landing-content_subtitle">Watch anywhere. Cancel anytime.</div>
+          <div className="app__landing-content_subtitle">Watch anywhere, anytime.</div>
           <div className="app__landing-content_subtitle_2">Ready to watch? Click on Explore.</div>
           <div className="app__landing-content_btn">
             <button type="button" onClick={() => navigate('/home')}>

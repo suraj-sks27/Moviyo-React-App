@@ -1,0 +1,19 @@
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.genre {
+  background: var(--pink);
+  border-radius: 5px;
+  padding: 2px 3px;
+
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 790px) {
+  .genre {
+  }
+}
