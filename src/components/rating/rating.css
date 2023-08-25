@@ -1,4 +1,18 @@
 .rating {
+  background-color: var(--black);
+  border-radius: 50%;
   color: #fff;
   z-index: 1;
+
+  padding: 2px;
+}
+
+.rating .CircularProgressbar-text {
+  font-size: 34px;
+  font-weight: 700;
+  fill: var(--black);
+}
+
+.rating .CircularProgressbar-trail {
+  stroke: transparent;
 }
