@@ -12,8 +12,3 @@
   font-size: 12px;
   white-space: nowrap;
 }
-
-@media screen and (max-width: 790px) {
-  .genre {
-  }
-}
