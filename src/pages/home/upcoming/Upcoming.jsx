@@ -21,7 +21,7 @@ const Popular = () => {
     <div className="carousel_Section">
       <div className="carousel_wrapper">
         <Wrapper>
-          <div className="carousel_Title">Also Explore </div>
+          <div className="carousel_Title">Also Watch </div>
           <Tab data={['Movies']} OnTabChange={OnTabChange} />
         </Wrapper>
       </div>

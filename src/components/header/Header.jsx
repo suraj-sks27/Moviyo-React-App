@@ -77,6 +77,9 @@ const Header = () => {
         </div>
 
         <ul className="app__header-nav">
+          <li className="app__header-navItem" onClick={() => navigate('/home')}>
+            Home
+          </li>
           <li className="app__header-navItem">Movies</li>
           <li className="app__header-navItem">TV Shows</li>
           <li className="app__header-navItem">

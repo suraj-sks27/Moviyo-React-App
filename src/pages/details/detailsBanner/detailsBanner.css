@@ -1,0 +1,280 @@
+.app__detailsBanner {
+  width: 100%;
+  background-color: var(--black);
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+
+.app__detailsBanner-backside_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0.1;
+  overflow: hidden;
+}
+
+.app__detailsBanner-backside_img .lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+}
+
+.lazy-load-image-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.app__detailsBanner-opacity {
+  width: 100%;
+  height: 250px;
+  background: linear-gradient(180deg, rgba(4, 21, 45, 0) 0%, #04152d 79.17%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.app__detailsBanner-container {
+  position: relative;
+
+  display: flex;
+  gap: 50px;
+}
+
+.contianer_left {
+  flex-shrink: 0;
+}
+
+.contianer_left .posterImg {
+  display: block;
+  max-width: 350px;
+
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 5px;
+
+  background: var(--black);
+}
+
+.contianer_left .posterImg img {
+  border-radius: 10px;
+}
+
+.container_right {
+  color: #fff;
+}
+
+.container_right .title {
+  font-size: 34px;
+  line-height: 44px;
+}
+
+.container_right .subtitle {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 15px;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.container_right .genres {
+  margin-bottom: 25px;
+  flex-flow: row wrap;
+}
+.container_right .genres .genre {
+  padding: 4px 7px;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.playbtn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+
+  .svg {
+    width: 60px;
+  }
+
+  .text {
+    font-size: 20px;
+    transition: all 0.7s ease-in-out;
+  }
+
+  .triangle {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 480;
+    stroke: white;
+    transform: translateY(0);
+    transition: all 0.7s ease-in-out;
+  }
+  .circle {
+    stroke: white;
+    stroke-dasharray: 650;
+    stroke-dashoffset: 1300;
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover {
+    .text {
+      color: var(--pink);
+    }
+    .triangle {
+      stroke-dashoffset: 0;
+      opacity: 1;
+      stroke: var(--pink);
+      animation: trailorPlay 0.7s ease-in-out;
+    }
+    .circle {
+      stroke-dashoffset: 0;
+      stroke: var(--pink);
+    }
+  }
+}
+
+.row .rating {
+  max-width: 90px;
+  background-color: var(--black2);
+}
+
+.row .rating .CircularProgressbar-text {
+  fill: white;
+}
+
+.overview {
+  margin-bottom: 30px;
+}
+
+.overview .overview_heading {
+  color: var(--pink);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.overview .overview_description {
+  line-height: 24px;
+  padding-right: 100px;
+}
+
+.info {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 0;
+}
+
+.info .infoItem {
+  margin-right: 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.info .text {
+  margin-right: 10px;
+  opacity: 0.5;
+  line-height: 24px;
+}
+
+.info .text.bold {
+  opacity: 1;
+  font-weight: 600;
+}
+
+.detailsBannerSkeleton {
+  display: flex;
+  position: relative;
+  gap: 50px;
+}
+
+.detailsBannerSkeleton .Wrapper {
+  display: flex;
+  gap: 50px;
+}
+.detailsBannerSkeleton .contianer_left {
+  flex-shrink: 0;
+  width: 350px;
+  height: 100%;
+  margin-right: 50px;
+
+  display: block;
+
+  border-radius: 12px;
+  aspect-ratio: 1/1.5;
+}
+
+.detailsBannerSkeleton .contianer_right {
+  width: 100%;
+}
+
+.detailsBannerSkeleton .contianer_right .row {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+
+  &:nth-child(2) {
+    width: 75%;
+    margin-bottom: 50px;
+  }
+  &:nth-child(5) {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .app__detailsBanner {
+    margin-bottom: 0;
+    padding-top: 120px;
+    min-height: 700px;
+  }
+
+  .app__detailsBanner-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .contianer_left .posterImg {
+    max-width: 100%;
+  }
+
+  .container_right .title {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .container_right .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .playbtn svg {
+    width: 80px;
+  }
+
+  .rating {
+    max-width: 70px;
+  }
+
+  .overview .overview_description {
+    padding-right: 0;
+  }
+
+  .detailsBannerSkeleton {
+    gap: 25px;
+    flex-direction: column;
+  }
+
+  .detailsBannerSkeleton .contianer_left {
+    width: 100%;
+  }
+}

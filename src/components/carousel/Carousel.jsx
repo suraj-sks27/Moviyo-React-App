@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
 import { BsFillArrowRightCircleFill } from 'react-icons/bs';
 import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import dayjs from 'dayjs';
 
 import Wrapper from '../wrapper/Wrapper';
@@ -13,14 +14,16 @@ import Rating from '../rating/Rating';
 
 import './carousel.css';
 
-const Carousel = ({ data, loading, title }) => {
+const Carousel = ({ data, loading, title, endpoint }) => {
   const element = useRef();
   const { url } = useSelector((state) => state.home);
+  const navigate = useNavigate();
 
   //Function to scroll left and right in Desktop
   const navigation = (direction) => {
     const container = element.current;
 
+    // If direction is 'left', the current scroll position is subtracted by the width of the container plus 20 pixels(because of 20px gap in desktop).
     const scrollAmount =
       direction === 'left'
         ? container.scrollLeft - (container.offsetWidth + 20)
@@ -69,7 +72,10 @@ const Carousel = ({ data, loading, title }) => {
 
               return (
                 <div key={item.id} className="carousel_item">
-                  <div className="carousel_img">
+                  <div
+                    className="carousel_img"
+                    onClick={() => navigate(`/${item.media_type || endpoint}/${item.id}`)}
+                  >
                     <Img src={imgUrl} alt="" />
                     <Rating rating={item.vote_average.toFixed(1)} />
                     <Genre data={item.genre_ids.slice(0, 2)} />

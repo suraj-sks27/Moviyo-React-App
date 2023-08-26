@@ -2,6 +2,7 @@
   margin-top: 2rem;
   background: var(--black3);
   text-align: center;
+  position: relative;
 }
 
 .container {
