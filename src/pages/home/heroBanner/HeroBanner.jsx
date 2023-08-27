@@ -39,6 +39,7 @@ const HeroBanner = () => {
 
       <Wrapper>
         <div className="app__heroBanner-content">
+          <div className="app__heroBanner-content_Title">Welcome</div>
           <div className="app__heroBanner-content_searchinput">
             <input
               type="text"
