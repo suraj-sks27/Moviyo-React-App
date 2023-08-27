@@ -1,5 +1,6 @@
 .carousel {
   margin-bottom: 50px;
+  color: #fff;
 }
 
 .carousel .wrapper {
@@ -10,7 +11,7 @@
   font-family: var(--font-family-paly);
   font-size: 24px;
   color: white;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-weight: normal;
 
   margin-right: 10px;
@@ -99,6 +100,10 @@
   transition: all 0.3s ease-in-out;
 }
 
+.skeletonBlock .carousel_img {
+  border-radius: 12px;
+}
+
 .carousel_img .lazy-load-image-background {
   position: absolute;
   top: 0;
@@ -139,6 +144,7 @@
 .skeletonBlock .carousel_content .date {
   max-width: 200px;
   height: 16px;
+  border-radius: 12px;
 }
 
 .carousel_content .title {

@@ -195,7 +195,7 @@
   gap: 50px;
 }
 
-.detailsBannerSkeleton .Wrapper {
+.detailsBannerSkeleton .wrapper {
   display: flex;
   gap: 50px;
 }
@@ -233,7 +233,7 @@
 
 @media screen and (max-width: 790px) {
   .app__detailsBanner {
-    margin-bottom: 0;
+    margin-bottom: 50px;
     padding-top: 120px;
     min-height: 700px;
   }

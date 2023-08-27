@@ -14,7 +14,7 @@
   transition: all 0.5s ease;
 }
 
-.wrapper {
+.app__header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;

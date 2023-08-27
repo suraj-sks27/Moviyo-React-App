@@ -1,0 +1,129 @@
+.castSelection {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.castSelection .wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.castSelection .sectionHeading {
+  font-family: var(--font-family-paly);
+  font-size: 24px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.castSelection .listItems {
+  display: flex;
+  gap: 20px;
+
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.listItems .listItem {
+  text-align: center;
+  color: #fff;
+}
+
+.listItems .listItem .profileImg {
+  width: 175px;
+  height: 175px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.listItems .listItem .profileImg img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.listItems .listItem .name {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.listItems .listItem .character {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.5;
+}
+
+.castSkeleton {
+  display: flex;
+  gap: 20px;
+
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.castSkeleton .skItem .circle {
+  width: 175px;
+  height: 175px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.castSkeleton .skItem .row {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.castSkeleton .skItem .row2 {
+  width: 75%;
+  height: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 790px) {
+  .castSelection .listItems {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+  }
+
+  .listItems .listItem .profileImg {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 15px;
+  }
+
+  .listItems .listItem .name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .listItems .listItem .character {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .castSkeleton {
+    margin-right: -20px;
+    margin-left: -20px;
+    padding: 0 20px;
+  }
+
+  .castSkeleton .skItem .circle {
+    width: 125px;
+    height: 125px;
+    margin-bottom: 15px;
+  }
+}

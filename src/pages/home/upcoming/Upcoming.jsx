@@ -4,7 +4,7 @@ import Carousel from '../../../components/carousel/Carousel';
 import Wrapper from '../../../components/wrapper/Wrapper';
 import Tab from '../../../components/tab/Tab';
 
-import FetchApi from '../../../hooks/fetchApi';
+import FetchApi from '../../../hooks/FetchApi';
 
 const Popular = () => {
   const [endpoint, setEndpoint] = useState('movie');
@@ -22,7 +22,6 @@ const Popular = () => {
       <div className="carousel_wrapper">
         <Wrapper>
           <div className="carousel_Title">Also Watch </div>
-          <Tab data={['Movies']} OnTabChange={OnTabChange} />
         </Wrapper>
       </div>
       <Carousel data={data?.results} loading={loading} endpoint={endpoint} />
