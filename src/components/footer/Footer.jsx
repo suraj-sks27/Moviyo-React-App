@@ -21,10 +21,10 @@ const Footer = () => {
           <li>FAQ</li>
         </ul>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          At Moviyo, we believe in the unparalleled art of storytelling through film. Our platform
+          is dedicated to bringing you the best of cinematic experiences, right at your fingertips.
+          From classic masterpieces to modern marvels, Moviyo is your constant companion on your
+          cinematic journey.
         </p>
         <ul className="app__footer-links">
           <li className="link">
