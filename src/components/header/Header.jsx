@@ -69,6 +69,15 @@ const Header = () => {
     setMobileMenu(false);
   };
 
+  const navigationHandler = (type) => {
+    if (type === 'movie') {
+      navigate('/explore/movie');
+    } else {
+      navigate('/explore/tv');
+    }
+    setMobileMenu(false);
+  };
+
   return (
     <div className={`app__header ${mobileMenu ? 'mobileView' : ''} ${showNav} `}>
       <Wrapper>
@@ -80,8 +89,12 @@ const Header = () => {
           <li className="app__header-navItem" onClick={() => navigate('/home')}>
             Home
           </li>
-          <li className="app__header-navItem">Movies</li>
-          <li className="app__header-navItem">TV Shows</li>
+          <li className="app__header-navItem" onClick={() => navigationHandler('movie')}>
+            Movies
+          </li>
+          <li className="app__header-navItem" onClick={() => navigationHandler('tv')}>
+            TV Shows
+          </li>
           <li className="app__header-navItem">
             <HiOutlineSearch onClick={openSearch} />
           </li>
