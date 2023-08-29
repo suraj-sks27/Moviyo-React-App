@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   BiLogoFacebook,
@@ -28,16 +29,28 @@ const Footer = () => {
         </p>
         <ul className="app__footer-links">
           <li className="link">
-            <BiLogoFacebook />
+            <Link
+              target="_blank"
+              style={{ color: '#fff' }}
+              to="https://www.instagram.com/suraj_sks"
+            >
+              <BiLogoInstagram />
+            </Link>
+          </li>
+          <li className="link">
+            <Link
+              target="_blank"
+              style={{ color: '#fff' }}
+              to="https://www.linkedin.com/in/suraj-sharma-a18b38199"
+            >
+              <BiLogoLinkedinSquare />
+            </Link>
           </li>
           <li className="link">
             <BiLogoTwitter />
           </li>
           <li className="link">
-            <BiLogoInstagram />
-          </li>
-          <li className="link">
-            <BiLogoLinkedinSquare />
+            <BiLogoFacebook />
           </li>
         </ul>
       </div>

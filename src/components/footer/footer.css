@@ -58,6 +58,10 @@ p {
   cursor: pointer;
 }
 
+.Linky {
+  color: #fff;
+}
+
 .app__footer-links li:hover {
   color: var(--pink);
   box-shadow: 0 0 12px var(--pink);
