@@ -42,7 +42,13 @@
   bottom: 0;
   left: 0;
 
-  background: linear-gradient(180deg, rgba(248, 158, 0, 0) 0%, rgba(4, 21, 45, 1) 100%);
+  /* background: linear-gradient(180deg, rgba(248, 158, 0, 0) 0%, rgba(4, 21, 45, 1) 100%); */
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(27, 35, 39, 1) 0%,
+    rgba(238, 130, 238, 0) 100%
+  );
 }
 
 .app__heroBanner-content {
