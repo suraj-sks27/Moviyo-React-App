@@ -4,7 +4,7 @@ import Carousel from '../../../components/carousel/Carousel';
 import Wrapper from '../../../components/wrapper/Wrapper';
 import Tab from '../../../components/tab/Tab';
 
-import FetchApi from '../../../hooks/fetchApi';
+import FetchApi from '../../../hooks/FetchApi';
 
 const Popular = () => {
   const [endpoint, setEndpoint] = useState('movie');
