@@ -4,28 +4,29 @@ This React-based web application harnesses the power of The Movie Database (TMDB
 
 Key Features:
 
-Comprehensive Information: MOVIYO fetches detailed data about movies, TV series, and web series, including ratings, actors, writers, and more.
+1.Comprehensive Information: MOVIYO fetches detailed data about movies, TV series, and web series, including ratings, actors, writers, and more.
 
-Genre-Based Recommendations: Choose from multiple genres to get personalized movie recommendations, ensuring you find the perfect film for your mood.
+2.Genre-Based Recommendations: Choose from multiple genres to get personalized movie recommendations, ensuring you find the perfect film for your mood.
 
-Interactive User Interface: MOVIYO's modern and interactive design enhances your browsing experience, making it enjoyable to explore the world of entertainment.
+3.Interactive User Interface: MOVIYO's modern and interactive design enhances your browsing experience, making it enjoyable to explore the world of entertainment.
 
-Enhanced Performance: Experience fast and smooth browsing with features like lazy loading and infinite scrolling.
+4.Enhanced Performance: Experience fast and smooth browsing with features like lazy loading and infinite scrolling.
 
-Intuitive Navigation: Use the scroller to effortlessly move left and right, easily accessing a vast library of content.
+5.Intuitive Navigation: Use the scroller to effortlessly move left and right, easily accessing a vast library of content.
 
-Image Fallback: MOVIYO ensures you always have visuals with backup images in case the API doesn't provide one.
+6.Image Fallback: MOVIYO ensures you always have visuals with backup images in case the API doesn't provide one.
 
-Rating Animation: Enjoy dynamic rating animations that bring movie scores to life.
+7.Rating Animation: Enjoy dynamic rating animations that bring movie scores to life.
 
 Technologies Used:
 
 MOVIYO leverages cutting-edge technologies to deliver its feature-rich experience:
 
-React.js: The core framework for building the user interface.
-Redux.js: Provides a centralized state management system.
-Vite.js: A build tool that enhances development speed.
-JavaScript, CSS, HTML: The foundational technologies for web development.
+1.React.js: The core framework for building the user interface.
+2.Redux.js: Provides a centralized state management system.
+3.Vite.js: A build tool that enhances development speed.
+4.JavaScript, CSS, HTML: The foundational technologies for web development.
+
 Audience and Future Plans:
 
 MOVIYO is designed for movie enthusiasts and anyone looking for quick reviews and information about movies, TV series, and web series.
